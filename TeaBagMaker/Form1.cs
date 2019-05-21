@@ -51,14 +51,15 @@ namespace TeaBagMaker
 
         private void TeaList_SelectedIndexChanged(object sender, EventArgs e)
         {
+            teaTime.Text = "차 시간 : ";
             if (teaList.Text == "홍차")
-                teaTime.Text = "2분";
+                teaTime.Text += "2분";
             else if (teaList.Text == "녹차")
-                teaTime.Text = "3분";
+                teaTime.Text += "3분";
             else if (teaList.Text == "루이보스차")
-                teaTime.Text = "5분";
+                teaTime.Text += "5분";
             else if (teaList.Text == "국화차")
-                teaTime.Text = "2분";
+                teaTime.Text += "2분";
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
@@ -67,9 +68,9 @@ namespace TeaBagMaker
             {
                 this.Timer.Enabled = false;
                 this.LabResult.Text = "";
+                this.teaList.Focus();
                 MessageBox.Show("티백을 건지세요!", "알림",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.teaList.Focus();
             }
             else
             {
