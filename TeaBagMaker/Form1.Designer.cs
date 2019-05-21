@@ -28,20 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.teaList = new System.Windows.Forms.ComboBox();
+            this.btn = new System.Windows.Forms.Button();
+            this.result = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // teaList
+            // 
+            this.teaList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.teaList.FormattingEnabled = true;
+            this.teaList.Location = new System.Drawing.Point(12, 12);
+            this.teaList.Name = "teaList";
+            this.teaList.Size = new System.Drawing.Size(204, 20);
+            this.teaList.TabIndex = 0;
+            // 
+            // btn
+            // 
+            this.btn.Location = new System.Drawing.Point(13, 39);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(203, 35);
+            this.btn.TabIndex = 1;
+            this.btn.Text = "담그기!";
+            this.btn.UseVisualStyleBackColor = true;
+            // 
+            // result
+            // 
+            this.result.AutoSize = true;
+            this.result.Location = new System.Drawing.Point(13, 81);
+            this.result.Name = "result";
+            this.result.Size = new System.Drawing.Size(0, 12);
+            this.result.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(445, 428);
+            this.ClientSize = new System.Drawing.Size(237, 288);
+            this.Controls.Add(this.result);
+            this.Controls.Add(this.btn);
+            this.Controls.Add(this.teaList);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.ComboBox teaList;
+        private System.Windows.Forms.Button btn;
+        private System.Windows.Forms.Label result;
     }
 }
 
