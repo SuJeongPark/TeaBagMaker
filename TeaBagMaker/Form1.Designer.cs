@@ -34,6 +34,8 @@
             this.result = new System.Windows.Forms.Label();
             this.Timer = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
+            this.LabResult = new System.Windows.Forms.Label();
+            this.teaTime = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // teaList
@@ -79,11 +81,31 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "2019-05-21   3607 박수정";
             // 
+            // LabResult
+            // 
+            this.LabResult.AutoSize = true;
+            this.LabResult.Location = new System.Drawing.Point(13, 107);
+            this.LabResult.Name = "LabResult";
+            this.LabResult.Size = new System.Drawing.Size(69, 12);
+            this.LabResult.TabIndex = 4;
+            this.LabResult.Text = "남은 시간 : ";
+            // 
+            // teaTime
+            // 
+            this.teaTime.AutoSize = true;
+            this.teaTime.Location = new System.Drawing.Point(13, 81);
+            this.teaTime.Name = "teaTime";
+            this.teaTime.Size = new System.Drawing.Size(29, 12);
+            this.teaTime.TabIndex = 5;
+            this.teaTime.Text = "시간";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(237, 288);
+            this.Controls.Add(this.teaTime);
+            this.Controls.Add(this.LabResult);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.result);
             this.Controls.Add(this.btn);
@@ -104,6 +126,8 @@
         private System.Windows.Forms.Label result;
         private System.Windows.Forms.Timer Timer;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LabResult;
+        private System.Windows.Forms.Label teaTime;
     }
 }
 
